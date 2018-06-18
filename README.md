@@ -11,25 +11,23 @@
 `define('JWT_AUTH_SECRET_KEY', 'yoursecretkey');`
 
 # on your Wordpress main directory check for the .htaccess to include  
-```
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /wordpress/
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wordpress/index.php [L]
-RewriteCond %{HTTP:Authorization} ^(.*)
-SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
-</IfModule>
-# END WordPress
-```
+`# BEGIN WordPress`
+`<IfModule mod_rewrite.c>`
+`RewriteEngine On`
+`RewriteBase /wordpress/`
+`RewriteRule ^index\.php$ - [L]`
+`RewriteCond %{REQUEST_FILENAME} !-f`
+`RewriteCond %{REQUEST_FILENAME} !-d`
+`RewriteRule . /wordpress/index.php [L]`
+`RewriteCond %{HTTP:Authorization} ^(.*)`
+`SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1`
+`</IfModule>`
+`# END WordPress`
+
 
 # download, install and activate [Better REST API Featured Images](https://wordpress.org/plugins/better-rest-api-featured-images/) plugin
 
 # create new categories and articles or use [FakerPress](https://wordpress.org/plugins/fakerpress/) plugin
-
 
 # install all dependencies
 npm install
