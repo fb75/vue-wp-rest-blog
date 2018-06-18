@@ -2,6 +2,8 @@
 
 > A Vue.js blog-app with Vue Router and Vuex using JWT for auth and Wordpress with WP API Rest
 
+<iframe width="630" height="394" src="https://www.useloom.com/embed/aff51a8bb77448338c4b6b7aa0e4717d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ## Build Setup
 
 ``` bash
