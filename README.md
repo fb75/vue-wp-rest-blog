@@ -11,7 +11,7 @@
 `define('JWT_AUTH_SECRET_KEY', 'yoursecretkey');`
 
 # on your Wordpress main directory check for the .htaccess to include  
-`
+```
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -24,16 +24,14 @@ RewriteCond %{HTTP:Authorization} ^(.*)
 SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 </IfModule>
 # END WordPress
-`
+```
 
-# download, install and activate [Better REST API Featured Images
-]('https://wordpress.org/plugins/better-rest-api-featured-images/') plugin
+# download, install and activate [Better REST API Featured Images](https://wordpress.org/plugins/better-rest-api-featured-images/) plugin
 
-# create new categories and articles or use [FakerPress]('https://wordpress.org/plugins/fakerpress/') plugin
+# create new categories and articles or use [FakerPress](https://wordpress.org/plugins/fakerpress/) plugin
 
-# create new CLI Vue.js project
 
-# install dependencies
+# install all dependencies
 npm install
 
 # serve with hot reload at localhost:8080
